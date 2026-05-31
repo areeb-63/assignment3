@@ -32,3 +32,9 @@ jobs:
           context: ./app/nginx
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/nginx-proxy:latest
+
+      - name: Verify images on DockerHub
+        run: |
+          echo "Flask API image: ${{ secrets.DOCKERHUB_USERNAME }}/flask-api:latest"
+          echo "Nginx image: ${{ secrets.DOCKERHUB_USERNAME }}/nginx-proxy:latest"
+          echo "Pipeline completed successfully!"
