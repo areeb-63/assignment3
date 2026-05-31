@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: areeb-63/nginx-proxy:latest
+          image: areeb063/nginx-proxy:latest
           ports:
             - containerPort: 80
           volumeMounts:

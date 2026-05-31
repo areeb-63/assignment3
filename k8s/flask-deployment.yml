@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: flask-api
-          image: areeb-63/flask-api:latest
+          image: areeb063/flask-api:latest
           ports:
             - containerPort: 5000
           env:
